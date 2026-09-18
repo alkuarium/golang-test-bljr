@@ -26,28 +26,39 @@ import (
 // 		fmt.Println(filter)
 // }
 
+// func main() {
+// 	var angka int
+// 	for {
+// 		fmt.Print("Masukan angka : ")
+// 		fmt.Scanln(&angka)
+
+// 		if angka != int() {
+// 			fmt.Println("yang bener kocak")
+// 			break
+// 		}
+
+// 		if angka <= 0 {
+// 			fmt.Println("Angka harus 1 >=")
+// 			fmt.Print("Masukan angka lagi : ")
+// 			fmt.Scanln(&angka)
+// 		}
+
+// 		if angka%2 == 0 {
+// 			fmt.Println("Angka", angka, "adalah bilangan genap")
+// 		} else if angka%2 != 0 {
+// 			fmt.Println("Angka", angka, "adalah bilangan ganjil")
+// 		}
+
+// 	}
+// }
+
+
 func main() {
-	var angka int
-	for {
-		fmt.Print("Masukan angka : ")
-		fmt.Scanln(&angka)
 
-		if angka != int() {
-			fmt.Println("yang bener kocak")
-			break
-		}
+	fmt.Println("--- ARRAY ---")
+	nilai := [5]int{10, 20, 30, 40, 50}
+	fmt.Println(nilai)
 
-		if angka <= 0 {
-			fmt.Println("Angka harus 1 >=")
-			fmt.Print("Masukan angka lagi : ")
-			fmt.Scanln(&angka)
-		}
-
-		if angka%2 == 0 {
-			fmt.Println("Angka", angka, "adalah bilangan genap")
-		} else if angka%2 != 0 {
-			fmt.Println("Angka", angka, "adalah bilangan ganjil")
-		}
-
-	}
+	panjangNilai := len(nilai)
+	fmt.Println("Panjang nilai array adalah", panjangNilai)
 }
