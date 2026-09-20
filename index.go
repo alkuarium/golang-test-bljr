@@ -21,9 +21,9 @@ import (
 // 	default:
 // 		fmt.Println("warna lampu tidak valid")
 // 	}
-// 		// Hewan := "kucing, Ayam, Bebek, Sapi, Kambing"
-// 		// filter := strings.Split(Hewan, ", ")
-// 		// fmt.Println(filter)
+// 		Hewan := "kucing, Ayam, Bebek, Sapi, Kambing"
+// 		filter := strings.Split(Hewan, ", ")
+// 		fmt.Println(filter)
 // }
 
 // func main() {
@@ -32,10 +32,10 @@ import (
 // 		fmt.Print("Masukan angka : ")
 // 		fmt.Scanln(&angka)
 
-// 		// if angka != int() {
-// 		// 	fmt.Println("yang bener kocak")
-// 		// 	break
-// 		// }
+// 		if angka != int() {
+// 			fmt.Println("yang bener kocak")
+// 			break
+// 		}
 
 // 		if angka <= 0 {
 // 			fmt.Println("Angka harus 1 >=")
@@ -52,46 +52,13 @@ import (
 // 	}
 // }
 
+
 func main() {
 
 	fmt.Println("--- ARRAY ---")
 	nilai := [5]int{10, 20, 30, 40, 50}
 	fmt.Println(nilai)
 
-	// panjangNilai := len(nilai)
-	// fmt.Println("Panjang nilai array adalah", panjangNilai)
-	Data()
+	panjangNilai := len(nilai)
+	fmt.Println("Panjang nilai array adalah", panjangNilai)
 }
-
-func Data() {
-	kumpulanData := [2][4]int{{10, 20, 30, 40}, {50, 60, 70, 80}}
-	kumpulanData[0] = [4]int{1, 2, 3, 4}
-	
-	
-	fmt.Println(kumpulanData)
-}
-
-func kumpulan() {
-	// kumpulanData := [2][4]int{{10, 20, 30, 40}, {50, 60, 70, 80}}
-	// kumpuldata := kumpulanData[0][2]
-	// fmt.Println(kumpuldata)
-}
-
-// func kumpul(){
-// 	kumpulanData := [2][4]int{{10, 20, 30, 40}, {50, 60, 70, 80}}
-
-// 	var baris, kolom int
-// 	fmt.Print("Masukan baris : ")
-// 	fmt.Scanln(&baris)
-// 	fmt.Print("Masukan kolom : ")
-// 	fmt.Scanln(&kolom)
-
-// 	if baris <0 || baris > 1 {
-// 		fmt.Println("Baris tidak valid")
-// 	} else if kolom <0 || kolom > 3 {
-// 		fmt.Println("Kolom tidak valid")
-// 	}
-
-// 	fmt.Println(kumpulanData[baris][kolom])
-
-// }
