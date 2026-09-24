@@ -20,10 +20,10 @@ func Array() {
 
 
 	//ARRAY BIASA
-	data := []int{1, 2, 3, 4, 5}
+	data := [5]int{1, 2, 3, 4, 5}
 	fmt.Println(data)
 
-	dataBuah := []string{"Mangga", "Apel", "Jeruk", "Pisang", "Semangka"}
+	dataBuah := [5]string{"Mangga", "Apel", "Jeruk", "Pisang", "Semangka"}
 	fmt.Println(dataBuah)
 	aku := len(dataBuah)
 	fmt.Println(aku)
